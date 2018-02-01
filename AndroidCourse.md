@@ -1,6 +1,4 @@
-Android 
-
-关于keystore的获取
+Android 之keystore的获取
 
 首次使用需要创建密钥
 
@@ -26,24 +24,7 @@ doutuian 是自己创建的名字  dotuian.keystore 是密钥的保存文件
 之后出现输入（你创建的名称（dotuian））口令（刚才创建的密码）
 
 
-如果输入正确就会出现
-
-Microsoft Windows [版本 6.1.7601]
-版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
-
-C:\Users\Administrator>cd /
-
-C:\>cd Program Files
-
-C:\Program Files>cd Java
-
-C:\Program Files\Java>cd jre1.8.0_151
-
-C:\Program Files\Java\jre1.8.0_151>cd bin
-
-C:\Program Files\Java\jre1.8.0_151\bin>.Android
-'.Android' 不是内部或外部命令，也不是可运行的程序
-或批处理文件。
+如果输入正确就会出现下面的情况
 
 C:\Program Files\Java\jre1.8.0_151\bin>keytool -genkey -alias dotuian -keystore
 dotuian.keystore -keyalg RSA
@@ -126,4 +107,3 @@ C:\Program Files\Java\jre1.8.0_151\bin>
 
 若下次再去取得的话 输入：keytool -list -v -keystore dotuian.keystore
 就会出现SHA1的信息
-
